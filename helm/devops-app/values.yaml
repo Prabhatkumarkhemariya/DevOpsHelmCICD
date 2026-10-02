@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: praabhatkumar1991/devops-app
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
